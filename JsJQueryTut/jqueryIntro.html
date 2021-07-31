@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Intro</title>
+</head>
+<body>
+    <div id="demo">
+        <p>
+            When you click the button below, the content of theis paragraph ll be changed.
+        </p>
+    </div>
+    <button id="btn">Click me to change content of div above</button>
+
+    <script src="./js/jQuery3.6.0.min.js"></script>
+    <script>
+
+        // Vanilla JS
+        // document.getElementById('btn').onclick = function(){
+        //     document.getElementById('demo').innerHTML = '<p>This is a new content</p>';
+        // }
+
+        // JQuery
+        $('#btn').click(function(){
+            $('#demo').html('<p>This is a new content</p>');
+        });
+    </script>
+</body>
+</html>
